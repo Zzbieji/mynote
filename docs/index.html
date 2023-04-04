@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Note</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'My Docsify Site',
+      repo: 'Zzbieji/mynote',
+      coverpage: true,
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      search: {
+        maxAge: 86400000,
+        paths: '/',
+        placeholder: '搜索'
+      },
+      plugins: [
+        function(hook, vm) {
+          hook.doneEach(function() {
+            document.title = vm.route.title + ' - My Docsify Site';
+          });
+        }
+      ]
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.5.5/dist/docsify.min.js"></script>
+</body>
+</html>
