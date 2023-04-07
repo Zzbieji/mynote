@@ -5,3 +5,5 @@
 > Welcome to My Notes. 
 
 [GitHub](https://github.com/Zzbieji/mynote)
+
+[**开启阅读**](README.md)
