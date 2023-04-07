@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Mynote</title>
+  <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/49583025?s=400&u=f75a3f60b8aac87b8b6518cd80a64eee8021f7fb&v=4">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -12,13 +13,31 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
+      name: '我的笔记',
+      repo: 'Zzbieji/mynote',
       coverpage: true,
-      loadNavbar: true
+      loadNavbar: false,
+      loadSidebar: true,
+      search: {
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '找不到结果',
+        depth: 2,
+      },
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 搜索插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 一键复制插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!-- 代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-shell-session.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-http.min.js"></script>
 </body>
 </html>
